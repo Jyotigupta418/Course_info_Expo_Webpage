@@ -57,7 +57,7 @@ export default function App() {
                         editingData={editingData}
                     />
                 ) : (
-                    <View style={styles.mainContainer}>
+                    <ScrollView style={styles.mainContainer}>
                         <CourseDetails courseData={courseData} />
                         <FAB
                             icon="pencil"
@@ -67,7 +67,7 @@ export default function App() {
                             onPress={() => setIsEditing(true)}
                         // label="Edit Course"
                         />
-                    </View>
+                    </ScrollView>
                 )}
                 {/* </ScrollView> */}
 
